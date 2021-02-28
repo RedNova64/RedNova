@@ -226,22 +226,16 @@ h1 {
 #twitch-embed {
     position: relative;
     top: 20vh;
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* product table */
+/* table */
 table {
-	border-spacing: 20px;
+	border-spacing: 50px;
 	margin: 0 auto;
 }
-.product {
-	width: 20%;
-	vertical-align: top;
-	transition: bottom 0.25s;
-}
-.spacing {
-	margin: 50px;
-	display: inline-flex;
-}
+
 
 /* footer */
 footer {
@@ -338,6 +332,15 @@ textarea {
 		margin: 20px 20px 30px;
 	}
 }
+/* twitch vods single row */
+@media only screen and (max-width: 1090px) {
+    .twitch-vod {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
 @keyframes fadeIn {
     0% {
 		opacity: 0;
