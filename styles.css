@@ -222,6 +222,12 @@ h1 {
 	color: #ffffff;
 }
 
+/* twitch */
+#twitch-embed {
+    position: relative;
+    top: 20vh;
+}
+
 /* product table */
 table {
 	border-spacing: 20px;
