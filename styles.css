@@ -234,25 +234,9 @@ table {
 	margin: 0 auto;
 }
 .product {
-	position: relative;
-	bottom: 0;
-	background: #1f1f1f;
 	width: 20%;
 	vertical-align: top;
 	transition: bottom 0.25s;
-}
-.product:hover {
-	bottom: 5px;	
-}
-.product-description {
-    background: #1f1f1f;
-    overflow: auto;
-	padding: 20px;
-	text-align: center;
-}
-.product-img {
-    width: 100%;
-    margin: 0;
 }
 .spacing {
 	margin: 50px;
