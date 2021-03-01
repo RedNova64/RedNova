@@ -231,6 +231,7 @@ h1 {
 }
 #twitch-embed-home {
     margin: 0 auto;
+    height: 500px;
 }
 
 /* table */
