@@ -47,7 +47,27 @@
 		</div>
 		<article id="article">
 			<div class="content">
-				<h1 style="text-align: center;"></h1>
+                <h1 style="text-align: center; line-height: 60px;">Watch <span style="background-color: #ff0000; padding: 0 7px;">LIVE</span><br/>on <span style="color: #a970ff;">Twitch</span></h1>
+                <html>
+                <body>
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div id="twitch-embed-home"></div>
+
+                    <!-- Load the Twitch embed script -->
+                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                    <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed-home", {
+                        width: "100%",
+                        height: "auto",
+                        channel: "rednova_x",
+                        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                        parent: ["rednova64.github.io"]
+                    });
+                    </script>
+                </body>
+                </html>
 			</div>
 		</article>
 		<!--section in developement

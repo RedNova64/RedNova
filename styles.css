@@ -134,7 +134,7 @@ a:hover {
 
 /* main content */
 .showcase-section {
-	background-image: url("images/index-background.jpg");
+	background-image: url("images/background.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -223,10 +223,14 @@ h1 {
 }
 
 /* twitch */
-#twitch-embed {
+#twitch-embed-stream {
     position: relative;
     top: 20vh;
     width: 90%;
+    margin: 0 auto;
+}
+#twitch-embed-home {
+    width: 100%;
     margin: 0 auto;
 }
 
