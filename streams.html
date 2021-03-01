@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<img src="images/text-logo.png" alt="Red Nova" class="nav-text-logo">
+			<a href="index.html"><img src="images/text-logo.png" alt="Red Nova" class="nav-text-logo"></a>
 			<nav class="expand-navbar">
 				<ul>
 					<a href="index.html"><li>Home</li></a>
@@ -31,23 +31,25 @@
 		</ul>
 		<div class="showcase-section">
             <html>
-            <body>
-                <!-- Add a placeholder for the Twitch embed -->
-                <div id="twitch-embed-stream"></div>
+                <body>
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div id="twitch-embed-stream"></div>
 
-                <!-- Load the Twitch embed script -->
-                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                    <!-- Load the Twitch embed script -->
+                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-                <script type="text/javascript">
-                new Twitch.Embed("twitch-embed-stream", {
-                    width: 854,
-                    height: 480,
-                    channel: "rednova_x",
-                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-                    parent: ["rednova64.github.io"]
-                });
-                </script>
+                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                    <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed-stream", {
+                        width: "100%",
+                        height: "100%",
+                        channel: "rednova_x",
+                        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                        parent: ["rednova64.github.io"]
+                    });
+                    </script>
+                </body>
+                </html>
             </body>
             </html>
 			<div class="scroll-indicator">
@@ -57,6 +59,7 @@
 		<article id="article">
 			<div class="content">
                 <h1 style="text-align: center;">Recent Streams on Twitch</h1>
+                <p style="text-align: center;">Stream replays can also be found on my YouTube channel <a href="https://www.youtube.com/channel/UCjMQtMbqHmPMPrY1a1tAUVA" target="_blank" style="color: #ff0000; text-decoration: underline;">here</a>.</p>
 				<table>
 					<tr>
 						<td class="twitch-vod">

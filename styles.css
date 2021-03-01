@@ -11,6 +11,10 @@ body {
 h1, h2, h3, h4, a, p {
 	font-weight: 400;
 }
+p {
+    line-height: 30px;
+    font-size: 14pt;
+}
 
 /* navbar */
 .navbar {
@@ -203,31 +207,26 @@ article {
 h1 {
 	font-size: 30pt;
 }
-.subtitle {
-	font-size: 24pt;
+.me-pic {
+    float: right;
 }
-.send-btn {
-	font-size: 12pt;
-	font-family: 'Abel', sans-serif;
-	background: #1f1f1f;
-	color: #afafaf;
-	border: none;
-	padding: 10px;
-	margin-top: 5px;
-	border-radius: 5px;
-	transition: color 0.5s;
+.button {
+    background: #ff0000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background 0.25s;
 }
-.send-btn:hover {
-	cursor: pointer;
-	color: #ffffff;
+.button:hover {
+    background: #ff4800;
 }
 
 /* twitch */
 #twitch-embed-stream {
     position: relative;
     top: 20vh;
-    width: 90%;
-    margin: 0 auto;
+    height: 500px;
+    margin: 0 10%;
 }
 #twitch-embed-home {
     margin: 0 auto;
@@ -285,14 +284,6 @@ footer.force-bottom {
 }
 
 /* random */
-p {
-	font-size: 14pt;
-}
-textarea {
-	font-family: 'Calibri', sans-serif;
-	font-size: 12pt;
-	padding: 10px;
-}
 
 @media only screen and (max-width: 970px) {
 	.nav-logo {
