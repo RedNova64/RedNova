@@ -186,11 +186,6 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	text-align: center;
-	padding: 100px 0;
-}
-.background-section-content {
-	width: 80%;
-	margin: 0 auto;
 }
 .content {
 	overflow: auto;
