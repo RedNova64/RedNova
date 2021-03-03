@@ -1,4 +1,6 @@
 /* CSS Document - Created by Ryan Schlosser */
+
+/* universal styling */
 html {
 	scroll-behavior: smooth;
 }
@@ -11,9 +13,20 @@ body {
 h1, h2, h3, h4, a, p {
 	font-weight: 400;
 }
+h1 {
+	font-size: 30pt;
+}
 p {
     line-height: 30px;
     font-size: 14pt;
+}
+a {
+	color: #AFAFAF;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+a:hover {
+    color: #ffffff;
 }
 
 /* navbar */
@@ -59,14 +72,6 @@ nav ul li {
 nav ul li:hover {
 	background: #292929;
 }
-a {
-	color: #AFAFAF;
-	text-decoration: none;
-	transition: color 0.5s;
-}
-a:hover {
-    color: #ffffff;
-}
 
 /* nav-dropdown */
 .nav-dropdown-btn {
@@ -92,7 +97,7 @@ a:hover {
 	padding: 10px 20px;
 }
 
-/* collapse navbar */
+/* collapsed navbar */
 .collapse-navbar {
 	float: right;
 }
@@ -136,7 +141,7 @@ a:hover {
 }
 
 
-/* main content */
+/* universal sections */
 .showcase-section {
 	background-image: url("images/background.jpg");
 	background-attachment: fixed;
@@ -150,6 +155,21 @@ a:hover {
     top: 45vh;
     margin: 0 5%;
 }
+.content {
+	overflow: auto;
+	width: 80%;
+	max-width: 1200px;
+	margin: 50px auto;
+	animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+article {
+	background: #333333;
+	overflow: auto;
+}
+
+/* home */
 .logo {
     max-width: 800px;
     width: 100%;
@@ -187,24 +207,30 @@ a:hover {
 	background-size: cover;
 	text-align: center;
 }
-.content {
-	overflow: auto;
-	width: 80%;
-	max-width: 1200px;
-	margin: 50px auto;
-	animation: fadeIn ease 1s;
-    animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+#about-me {
+	width: 40%;
+	float: left;
 }
-article {
-	background: #333333;
-	overflow: auto;
-}
-h1 {
-	font-size: 30pt;
-}
-.me-pic {
+#me-img {
     float: right;
+	height: auto; 
+	width: 55%;
+}
+#my-setup {
+	width: 40%;
+	float: right;
+}
+#setup-img {
+	width: 55%;
+	height: auto;
+	float: left;
+}
+/* home page content single column */
+@media only screen and (max-width: 1150px) {
+	#about-me, #me-img, #my-setup, #setup-img {
+		width: 100%;
+		float: none;
+	}
 }
 .button {
     background: #ff0000;
@@ -235,7 +261,6 @@ table {
 	border-spacing: 50px;
 	margin: 0 auto;
 }
-
 
 /* footer */
 footer {
@@ -282,6 +307,12 @@ footer.force-bottom {
 
 /* random */
 
+/* stream window size vertical */
+@media only screen and (max-height: 700px) {
+	#twitch-embed-stream, #twitch-embed-home {
+		height: 400px;
+	}
+}
 @media only screen and (max-width: 970px) {
 	.nav-logo {
 		display: initial;
@@ -324,7 +355,7 @@ footer.force-bottom {
 		margin: 20px 20px 30px;
 	}
 }
-/* twitch vods single row */
+/* twitch vods single column */
 @media only screen and (max-width: 1400px) {
     .twitch-vod {
         width: 100%;
