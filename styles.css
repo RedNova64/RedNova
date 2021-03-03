@@ -232,6 +232,52 @@ article {
 		float: none;
 	}
 }
+.equipment {
+	background-color: #1f1f1f;
+	width: 25%;
+	overflow: auto;
+	vertical-align: top;
+}
+.equipment-img {
+	height: auto;
+	width: 100%;
+}
+.equipment-content {
+	padding: 5%;
+	text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+	.equipment {
+		display: block;
+		width: 100%;
+		margin: 50px 0;
+	}
+	.equipment-img {
+		float: left;
+		width: 30%;
+	}
+	.equipment-content {
+		float: right;
+	}
+}
+@media only screen and (max-width: 845px) {
+	.equipment-img {
+		width: 50%;
+	}
+	.equipment-content {
+		width: 40%;
+	}
+}@media only screen and (max-width: 685px) {
+	.equipment-img, .equipment-content {
+		float: none;
+	}
+	.equipment-content {
+		width: auto;
+	}
+	.equipment-img {
+		width: 100%;
+	}
+}
 .button {
     background: #ff0000;
     text-align: center;
