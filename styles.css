@@ -190,6 +190,7 @@ a:hover {
 .content {
 	overflow: auto;
 	width: 80%;
+	max-width: 1200px;
 	margin: 50px auto;
 	animation: fadeIn ease 1s;
     animation-iteration-count: 1;
@@ -221,7 +222,8 @@ h1 {
     position: relative;
     top: 20vh;
     height: 500px;
-    margin: 0 10%;
+    margin: 0 auto;
+	max-width: 1200px;
 }
 #twitch-embed-home {
     margin: 0 auto;
@@ -323,12 +325,18 @@ footer.force-bottom {
 	}
 }
 /* twitch vods single row */
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1400px) {
     .twitch-vod {
         width: 100%;
         display: block;
         margin-bottom: 30px;
     }
+}
+/* live stream on stream page */
+@media only screen and (max-width: 1500px) {
+	#twitch-embed-stream {
+		margin: 0 10%;
+	}
 }
 
 @keyframes fadeIn {
