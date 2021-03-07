@@ -47,9 +47,9 @@ a:hover {
 }
 .nav-logo {
 	display: none;
-	margin: 10px 30px;
+	padding: 25px 30px;
 	float: left;
-	height: 60px;
+	height: 30px;
 }
 nav {
 	display: table;
@@ -360,6 +360,9 @@ footer.force-bottom {
 	}
 }
 @media only screen and (max-width: 970px) {
+	.nav-text-logo {
+		display: none;
+	}
 	.nav-logo {
 		display: initial;
 	}
